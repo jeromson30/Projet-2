@@ -110,8 +110,8 @@ a {
 }
 
 .recherches-and-localisations section {
+    margin-top: 20px;
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -122,9 +122,46 @@ a {
 
 .localisation {
     display: flex;
-    flex-direction: row;
-    width: 400px;
     height: 64px;
+    margin-top: 20px;
+}
+
+.localisation input{
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+    background-color: white;
+    border-style: solid;
+    border-color: var(--main-bg-color);
+}
+
+.localisation input:hover{
+    border-color: var(--main-bg-color);
+}
+
+.filters {
+    display: flex;
+    margin-top: 20px;
+}
+
+.filters button {
+    margin-left:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-width: 1px;
+    border: lightgray;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+.filters button:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
 }
 
 .search-localisation {
