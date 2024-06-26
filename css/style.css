@@ -118,7 +118,7 @@ a {
 .recherches-title {
     display: flex;
     flex-direction: column;
-}
+
 
 .localisation {
     display: flex;
@@ -154,7 +154,7 @@ a {
     background-color: white;
     color: black;
     border-width: thin;
-    border: lightgray;
+    border: #D9D9D9;
     border-radius: 30px;
     border-style: solid;
 }
