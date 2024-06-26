@@ -118,7 +118,7 @@ a {
 .recherches-title {
     display: flex;
     flex-direction: column;
-
+}
 
 .localisation {
     display: flex;
