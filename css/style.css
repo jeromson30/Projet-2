@@ -14,12 +14,14 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 header {
     width: 100%;
+    height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,6 +102,57 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+.recherches-and-localisations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recherches-and-localisations section {
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.recherches-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.localisation {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 64px;
+}
+
+.search-localisation {
+    background-color: var(--main-bg-color);
+    width: 50px;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+}
+
+/* .icon-localisation {
+    width: 40px;
+    height: 40px;
+    padding: auto;
+}
+
+.input-localisation input{
+    border: 0;
+    margin: 0;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+} */
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
