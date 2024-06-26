@@ -36,7 +36,7 @@ header {
 
 nav {
     right: 0;
-    width: 24%;
+    width: 23%;
 }
 
 #menu ul {
@@ -50,6 +50,7 @@ nav {
 
 #menu li {
     padding-top: 15px;
+    border-top: medium solid transparent;
 }
 
 #menu li:hover {
