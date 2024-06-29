@@ -21,7 +21,7 @@ body {
 
 header {
     width: 100%;
-    height: 79px;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,18 +104,17 @@ a {
     color: var(--main-bg-color)
 }
 
-.recherches-and-localisations {
-    display: flex;
-    justify-content: space-between;
-}
 
-.recherches-and-localisations section {
-    margin-top: 20px;
+.search-and-localisations {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     border-radius: 20px;
     box-sizing: border-box;
 }
 
-.recherches-title {
+.search-title {
     display: flex;
     flex-direction: column;
 }
@@ -127,9 +126,9 @@ a {
 }
 
 .localisation input{
-    text-align: center;
     font-size:18px;
     font-weight: bold;
+    padding-left: 1%;
     background-color: white;
     border-style: solid;
     border-color: var(--main-bg-color);
@@ -137,6 +136,19 @@ a {
 
 .localisation input:hover{
     border-color: var(--main-bg-color);
+}
+
+.localisation button{
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
 }
 
 .filters {
@@ -183,6 +195,15 @@ a {
     align-items: center;
 }
 
+.informations i {
+    border-color: #D9D9D9;
+    border-width: thin;
+    padding: 0.87em 0.73em 0.87em 0.73em;
+    border-radius: 100%;
+    border-width: 0.1em;
+}
+
+
 /* .icon-localisation {
     width: 40px;
     height: 40px;
@@ -215,7 +236,30 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
 }
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergements-title {
+    align-items: center;
+}
+
+.hebergements .card{
+    margin-top: 15%;
+}
+
+.hebergements img {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -227,6 +271,8 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .populaires-cards .card {
     display: flex;
@@ -261,6 +307,8 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
 
 
 
