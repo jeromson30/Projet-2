@@ -108,7 +108,7 @@ a {
 .search-and-localisations {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 0.3rem;
     margin-bottom: 1rem;
     border-radius: 20px;
     box-sizing: border-box;
@@ -282,9 +282,9 @@ a {
     margin: 0;
 }
 
-.hebergements-cards .card-rating {
-    margin-left: 5px;
-    margin-bottom: 5px;
+.hebergements-footer h3 {
+    margin-top: 33px;
+    margin-bottom: 0;
 }
 
 /****** Populaires ***********/
@@ -305,7 +305,7 @@ a {
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 145px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
