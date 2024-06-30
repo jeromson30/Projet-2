@@ -445,6 +445,10 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
     footer {
         flex-direction: column;
     }
