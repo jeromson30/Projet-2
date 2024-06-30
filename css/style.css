@@ -341,15 +341,9 @@ a {
 .activites {
     width: 100%;
     margin-top: 33px;
-    padding: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-}
-
-.activites a {
-    width: 100%;
-    height: 100%;
-    max-width: 23%;
 }
 
 .activites-cards {
@@ -359,9 +353,13 @@ a {
     flex-wrap: wrap;
 }
 
+.activites a {
+    width: 23%;
+    height: 100%;
+}
+
 .activites-cards .card{
-    width: 100%;
-    max-width: 23%;
+    width: 90%;
     padding: 0;
     margin-top: 33px;
     margin-right: 33px;
@@ -469,6 +467,26 @@ footer li {
 
     .populaires-cards .card {
         width: 100%;
+    }
+
+    .activites-cards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites a {
+        width: 100%;
+        height: 100%;
+    }
+    .activites-cards .card{
+        width: 100%;
+        padding: 0;
+        margin-top: 33px;
+        margin-right: 33px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
 }
