@@ -26,7 +26,7 @@ form {
 
 header {
     width: 100%;
-    height: 10%;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,7 +133,7 @@ a {
 .localisation input{
     font-size:18px;
     font-weight: bold;
-    padding-left: 1%;
+    padding-left: 2%;
     background-color: white;
     border-style: solid;
     border-color: var(--main-bg-color);
@@ -346,6 +346,12 @@ a {
     flex-direction: column;
 }
 
+.activites a {
+    width: 100%;
+    height: 100%;
+    max-width: 23%;
+}
+
 .activites-cards {
     width: 100%;
     display: flex;
@@ -354,7 +360,8 @@ a {
 }
 
 .activites-cards .card{
-    width: 22%;
+    width: 100%;
+    max-width: 23%;
     padding: 0;
     margin-top: 33px;
     margin-right: 33px;
@@ -373,6 +380,33 @@ a {
 .activites-cards .card-title {
     padding-left: 10px;
 }
+
+footer {
+    background-color: var(--main-bg-color);
+    margin-top: 33px;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 33%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+footer li {
+    justify-content: space-between;
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -413,5 +447,28 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 33px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
 }
