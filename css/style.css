@@ -648,12 +648,13 @@ footer li {
 
      .localisation input{
         z-index: 0;
+        padding-right: 15px;
     }
 
     .localisation button {
         z-index: 1;
         position: relative;
-        left:-20px;
+        left:-15px;
         border-radius: 20px;
         padding-left: 5px;
         padding-right: 5px;
