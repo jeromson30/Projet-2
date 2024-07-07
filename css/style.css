@@ -377,7 +377,7 @@ a {
 }
 
 .activites a {
-    width: 23%;
+    width: 25%;
     height: 100%;
 }
 
@@ -399,7 +399,9 @@ a {
 }
 
 .activites-cards .card-title {
+    text-overflow: ellipsis;
     padding-left: 10px;
+    min-height: 38px;
 }
 
 footer {
@@ -609,7 +611,10 @@ footer li {
     }
 
     .activites {
-        width: 90%;
+        width: inherit;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     .activites-title {
@@ -617,10 +622,12 @@ footer li {
     }
 
     .activites-cards {
-        width: 100%;
-        padding: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .activites-cards a{
@@ -636,6 +643,8 @@ footer li {
 
     .activites-cards .card{
         padding: 0;
+        margin-top: 20px;
+        margin-right: 0;
         width: 100%;
         max-width: 380px;
         height: 100%;
