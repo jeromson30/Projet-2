@@ -110,7 +110,6 @@ a {
     color: var(--main-bg-color)
 }
 
-
 .search-and-localisations {
     display: flex;
     flex-direction: column;
@@ -131,11 +130,14 @@ a {
 
 .localisation {
     display: flex;
+    width: 80%;
     height: 64px;
     margin-top: 20px;
 }
 
 .localisation input{
+    width: 70%;
+    max-width: 230px;
     font-size:18px;
     font-weight: bold;
     padding-left: 2%;
@@ -162,7 +164,7 @@ a {
     background-color: #0065FC;
     color: white;
     border: none;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 20px 20px 0;
 }
 
 .localisation .loupebouton {
@@ -200,15 +202,16 @@ a {
 }
 
 .search-localisation {
+    width: 60px;
     background-color: var(--main-bg-color);
-    width: 50px;
     border-radius: 20px 0 0 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #000000;
+
 }
 
 .informations {
@@ -494,8 +497,13 @@ footer li {
     .search-and-localisations {
         width: 100%;
         margin-top: 20px;
-        padding: 0 33px;
-        align-items: center;
+        padding-left:30px;
+        justify-content: space-around;
+    }
+
+    .search-localisation {
+        min-width: 60px;
+        justify-content: space-around;
     }
 
     header {
@@ -655,13 +663,17 @@ footer li {
 
     .filters {
         width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-top: 30px;
         padding: O;
     }
 
     .filters-zone {
-        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
     }
 
     .filters button {
@@ -672,8 +684,16 @@ footer li {
         margin: 10px 3px;
     }
 
+    .localisation {
+        margin-left: 30px;
+        justify-content: center
+    }
+
      .localisation input{
         z-index: 0;
+        width: 80%;
+        min-width: 180px;
+        font-size: 14px;
         padding-right: 15px;
     }
 
@@ -684,7 +704,7 @@ footer li {
         border-radius: 20px;
         padding-left: 5px;
         padding-right: 5px;
-        width: 60px;
+        min-width: 60px;
     }
 
     .localisation .loupebouton {
