@@ -140,7 +140,7 @@ a {
     max-width: 230px;
     font-size:18px;
     font-weight: bold;
-    padding-left: 2%;
+    padding-left: 10px;
     background-color: white;
     border-style: solid;
     border-color: var(--main-bg-color);
@@ -439,6 +439,13 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filters {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+        padding: O;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -671,9 +678,10 @@ footer li {
     .filters-zone {
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
         align-items: center;
         justify-content: space-around;
-        justify-items: center;
     }
 
     .filters button {
@@ -681,7 +689,6 @@ footer li {
         font-size: 14px;
         min-width: 150px;
         padding: 12px 12px;
-        margin: 10px 3px;
     }
 
     .localisation {
