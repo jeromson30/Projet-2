@@ -1,46 +1,61 @@
 <!DOCTYPE html>
+<!-- langue du site web -->
 <html lang="fr">
-
 <head>
+    <!-- Encodage de la page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
     <title>Booki</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Framework Font-Awesomme demandé dans les specs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <!-- Chemin relatif vers le CSS du site -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Conteneur principale pour respecter une largeur maximale de 1440px (specs du site web) -->
     <div class="main-container">
+    <!-- Balise semantique header pour l'entete du site -->
         <header>
-            <img src="images/logo/Booki.png" id="logo" />
+            <img src="images/logo/Booki.png" id="logo" alt="Bienvenue sur Booki !">
+            <!-- Balise nav pour le menu avec une largeur 23% (environ 1 quart de la largeur) et largeur minimale de 230px pour les resolutions les plus petites et éviter la superposition des balise <li> -->
             <nav id="menu">
                 <ul>
+                    <!-- Les liens renvoyent vers des sections du site comme demandé dans les specs -->
                     <li><a href="#heberge">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- Balise sémantique main pour le contenu principale de la page web -->
         <main>
+            <!-- Section search and localisation pour la partie recherche -->
                 <section class="search-and-localisations">
                     <div class="search-title">
                         <h2 class="section-title">Trouver votre hébergement pour vos vacances de rêve</h2>
                         <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
                     </div>
 
+                    <!-- Utilisation de la balise form en flexbox afin d'encapsuler les balises <i> <input> et <button> -->
                     <form action="#heberge" method="post" class="localisation">
                             <i class="fa-solid fa-location-dot fa-lg search-localisation"></i>
-                            <input type="text" value="Marseille, France"/>
+                            <!-- Utilisation de la valeur par défaut : "Marseille, France" et non pas un placeholder car c'est censé être le résultat d'une recherche d'un utilisateur -->
+                            <input type="text" value="Marseille, France">
                             <button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg loupebouton"></i><span class="txtbouton">Rechercher</span></button>
                     </form>
 
+                    <!-- Div pour les boutons filtres qui sont inactifs (demandé dans les specs) flex direction row en affichage Desktop et flex direction en column pour affichage tablette et mobile -->
                     <div class="filters"> 
                         <h3>Filtres</h3>
                         <div class="filters-zone">
+                            <!-- Utilisation de Font Awesome pour les icones -->
                             <button><i class="fa-solid fa-money-bill-wave fa-lg"></i> Economique</button>
                             <button><i class="fa-solid fa-person fa-lg"></i> Familial</button>
                             <button><i class="fa-solid fa-heart fa-lg"></i> Romantique</button>
@@ -48,12 +63,15 @@
                         </div>
                     </div>
 
+                    <!-- Partie information simple flex box row, utilisation de Font Awesome pour l'icone -->
                     <div class="informations">
                         <i class="fa-solid fa-info fa-xs fa-pull-right fa-border "></i>
                         <p class="card-subtitle" style="margin-left: 10px;"> Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                     
                 </section>
+            
+            <!-- Flexbox Row pour les sections hébergement et populaire (Desktop) puis en column pour la vue tablette et enfin en column-reverse pour fla vue depuis un mobile-->
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="heberge">
                     <div class="hebergements-title">
@@ -61,6 +79,7 @@
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
+                            <!-- Utilisation de la balise sémantique article pour le contenu de la section (demandé dans les specs) -->
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
@@ -247,6 +266,7 @@
                     </div>
                 </section>
             </div>
+
             <section class="activites" id="activites">
                 <div class="activites-title">
                     <h2 class="section-title">Activités à Marseille</h2>
@@ -280,6 +300,7 @@
             </section>
 
         </main>
+        <!-- Footer -->
         <footer>
             <div class="footer-column">
                 <h2 class="card-title">A propos</h2>
