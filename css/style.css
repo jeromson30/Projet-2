@@ -443,7 +443,6 @@ footer li {
         width: 100%;
         flex-direction: column;
         margin-top: 30px;
-        padding: O;
     }
     
     .hebergements-and-populaires {
@@ -531,8 +530,6 @@ footer li {
     #menu li{
         width: 100%;
         text-align: center;
-        padding-left: auto;
-        padding-right: auto;
     }
 
     #menu li {
@@ -672,7 +669,6 @@ footer li {
         width: 100%;
         flex-direction: column;
         margin-top: 30px;
-        padding: O;
     }
 
     .filters-zone {
@@ -699,7 +695,7 @@ footer li {
      .localisation input{
         z-index: 0;
         width: 80%;
-        min-width: 180px;
+        min-width: 155px;
         font-size: 14px;
         padding-right: 15px;
     }
@@ -717,8 +713,6 @@ footer li {
     .localisation .loupebouton {
         width: initial;
         height: initial;
-        padding-top: auto;
-        padding-bottom:auto;
         color: white;
         visibility: visible;
     }
